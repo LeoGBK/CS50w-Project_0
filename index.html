@@ -5,14 +5,22 @@ Search
 {% endblock %}
 
 {% block main %}
-<div class="nav">
-    <a href="images.html">Image Search</a>
-    <a href="advanced.html">Advanced Search</a>
+<div>
+    <ul class="nav">
+        <li class="nav-item"><a href="/images.html">Image Search</a></li>
+        <li class="nav-item"><a href="/advanced.html">Advanced Search</a></li>
+    </ul>
+</div>
+<div class="haupt">
+    <img src="/google-searchs.png" alt="Google Search">
 </div>
 <div class="haupt">
     <form action="https://google.com/search?q={% q %}">
         <input type="text" name="q" class="caja" placeholder="Search Google">
-        <input type="submit" value="Google Search">
+        <div class="haupt">
+            <input type="submit" value="Google Search" class="boton">
+            <input type="submit" value="I'm Feeling Lucky" class="boton">
+        </div>
     </form>
 </div>
 {% endblock %}
