@@ -5,3 +5,7 @@
 .haupt {
   align-content: center;
 }
+
+.caja {
+  border-radius: 4;
+}
